@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .portfolio {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #ffffff; /* Adding background color to portfolio section */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd; /* Adding border */
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+            background-color: #ff6f61;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
+            /* Animation */
+            animation: scaleIn 0.5s ease-out;
+        }
+
+        .profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 30px;
+            /* Animation */
+            animation: fadeIn 1s ease-out;
+            border: 1px solid #ddd; /* Adding border */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            /* Animation */
+            animation: rotate 2s linear infinite;
+        }
+
+        .details {
+            text-align: left;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid #ddd; /* Adding border */
+        }
+
+        .details h3 {
+            color: #ff6f61;
+            margin-bottom: 10px;
+        }
+
+        .details p {
+            color: #555;
+            font-size: 1em;
+            line-height: 1.5;
+        }
+
+        .project {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            border: 1px solid #ddd; /* Adding border */
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .project h3 {
+            font-size: 1.5em;
+            color: #ff6f61;
+            margin-bottom: 10px;
+            /* Example animation - you can customize or add more animations as needed */
+            animation: rainbow 5s infinite;
+        }
+
+        .project p {
+            color: #555;
+            font-size: 1em;
+            line-height: 1.5;
+        }
+
+        /* Example animation - you can customize or add more animations as needed */
+        @keyframes rainbow {
+            0% { color: #ff6f61; }
+            25% { color: #f9d423; }
+            50% { color: #6a1b9a; }
+            75% { color: #00bcd4; }
+            100% { color: #4caf50; }
+        }
+
+        @keyframes scaleIn {
+            0% {
+                transform: scale(0);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="portfolio">
+        <h2>Portfolio</h2>
+
+        <!-- Profile Section -->
+        <div class="profile">
+            <img src="your-photo.jpg" alt="Your Photo">
+            <div class="details">
+                <h3>Basic Info</h3>
+                <p>Name: John Doe</p>
+                <p>Location: City, Country</p>
+                <p>Email: john.doe@example.com</p>
+                <p>Phone: +1234567890</p>
+                <h3>Education</h3>
+                <p>Bachelor's Degree in Computer Science</p>
+                <p>University Name, Graduation Year</p>
+                <h3>Skills</h3>
+                <p>HTML, CSS, JavaScript</p>
+                <p>Python, Java, SQL</p>
+                <h3>Experience</h3>
+                <p>Company Name, Role</p>
+                <p>Duration: Month Year - Month Year</p>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of Project 1</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of Project 2</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+</body>
+</html>
